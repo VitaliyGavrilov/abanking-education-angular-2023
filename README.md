@@ -1,3 +1,4 @@
-Лекции по angular от Abanking Education 2023
-Ссылка на первую лекцию:
-https://www.youtube.com/watch?v=TGWCbLW3T3U&t=30s
+Лекция номер 2 по angular от Abanking Education 2023
+A2: React, Angular, Vue
+Ссылка:
+https://www.youtube.com/watch?v=Wyr2SlvbhOg
