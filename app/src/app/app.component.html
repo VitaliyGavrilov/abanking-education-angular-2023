@@ -55,9 +55,20 @@
 
 <div class="red-div">
   <h2>Синтаксис для дата байдинга</h2>
-  <!--  -->
+  <!-- не правильный пример  -->
+  <!-- <h3>Тупо кидаем из основного ком. переменную в дочерний, там ее меняем, и кидвем обдратно, так делать не стоит</h3>
   <div>
-    <app-additional></app-additional>
-  </div>
+    <p>{{dataBand}}</p>
+    <app-additional [dataBanding]="dataBand" (dataBandingChange)="handleDataBandingChange($event)"></app-additional>
+  </div> -->
+   <!-- правильный пример  -->
+   <h3>Банан в коробке</h3>
+   <p>Важно! Ангуляр все длелает сам, но ему нужно чтобы Input и Output назывались одинково, но Output должен быть с припиской Change  </p>
+   <p>{{dataBand}}</p>
+   <app-additional [(dataBanding)]="dataBand"></app-additional>
 </div>
 
+
+<div class="red-div">
+  <h2></h2>
+</div>

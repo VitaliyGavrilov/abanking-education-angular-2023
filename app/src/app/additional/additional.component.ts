@@ -23,14 +23,23 @@ export class AdditionalComponent implements OnInit{
   @Output() public iEvent: EventEmitter<string> = new EventEmitter();
   @Output() public iEventClickCatsName: EventEmitter<string> = new EventEmitter();
 
+  //дата бандинг
+  //пример, принимаем данные от основного компонента, изменяем их в дочернем, и возврашаем измененные данные обратно в основной элемент
+  @Input()  public dataBanding!:string;
+  @Output() public dataBandingChange: EventEmitter<string> = new EventEmitter();
+
   ngOnInit(): void {
     this.iEvent.next('Юс');
   }
-
+  //передаем информацию о событии, и уже в основном компоненте обрабатываем событие
   public handleClickCatsName():void {
     this.iEventClickCatsName.next(this.catName)
   }
 
+  public handleDataBandingChange():void{
+    this.dataBanding += 'А';
+    this.dataBandingChange.next(this.dataBanding);
+  }
 
 
 }

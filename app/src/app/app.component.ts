@@ -12,7 +12,8 @@ export class AppComponent {
   protected name = 'Соня';
   protected kidName = '';
   protected arrCatsName = ['Соня','Ася','Кевин','Чипса']
-  protected clicCatsName =''
+  protected clicCatsName ='';
+  protected dataBand = 'крик души а'
 
   protected handelIEvent(e:string):void {
     this.kidName = e;
